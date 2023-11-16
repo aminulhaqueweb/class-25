@@ -1,0 +1,766 @@
+/* ============================== font family start =============================== */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+/* ------------------------------ font family end --------------------------------- */
+/* ============================== Common css start =============================== */
+*{
+    margin:0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ol,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+h1,h2,h3,h4,h5,h6,p,ol,ul{
+    margin: 0;
+    padding: 0;
+}
+.common_head h2{
+    width: 507px;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color:var(--scendory_color);
+}
+.common_head p{
+    width: 516px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color:var(--praymari_color);
+    margin-top: 20px;
+}
+/* ------------------------------ Common css end --------------------------------- */
+/* ============================== varaibale start =============================== */
+:root{
+    --poppins:'Poppins', sans-serif;
+    --open_sans:'Open Sans', sans-serif;
+    --brand_color:#007F5F;
+    --praymari_color:#616161;
+    --scendory_color:#1E1E1E;
+}
+/* ------------------------------ varaibale end --------------------------------- */
+/* ============================== menu part start =============================== */
+.main_menu{
+    padding: 41px 0;
+    background: #fff !important;
+}
+.main_menu ul{
+    gap:52px;
+}
+.main_menu ul li a{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color:var(--praymari_color);
+}
+ .menu_button a{
+    width: 150px;
+    height: 55px;
+    background: var(--brand_color);
+    border: 1px solid var(--brand_color);
+    border-radius: 17px;
+    font-size: 16px;
+    font-weight: 600;
+    color:#fff;
+    text-align: center;
+    line-height: 55px;
+    transition: all linear .3s;
+}
+.menu_button a:hover{
+    background: transparent;
+    color: var(--brand_color);
+    transform: scale(1.2);
+}
+/* ------------------------------ menu part end --------------------------------- */
+/* ============================== banner part start =============================== */
+#banner{
+    padding-top: 147px;
+    padding-bottom: 122px;
+    background: url('../image/banner_img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+#banner::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 40%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+.banner_text h1{
+    width: 573px;
+    font-size: 65px;
+    font-weight: 600;
+    font-family:var(--poppins);
+    color:#ffff;
+
+}
+.banner_text p{
+    width: 597px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.banner_button a{
+    width: 180px;
+    height: 56px;
+    background: var(--brand_color);
+    border: 1px solid var(--brand_color);
+    border-radius: 17px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: #ffff;
+    text-align: center;
+    line-height: 56px;
+    transition: all linear .3s;
+}
+.banner_button a:hover{
+    background: #fff;
+    color: var(--brand_color);
+}
+.banner_src_row{
+    width: 825px;
+    height: 130px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 25px;
+    margin-top: 60px;
+}
+.src_head{
+    display: flex;
+}
+.src_head .src_icon_one{
+    color: var(--brand_color);
+    margin-right: 11px;
+}
+.src_head .src_icon_two{
+    color: #616161;
+    margin-left: 20px;
+}
+.src_head h2{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #292929;
+}
+.banner_src_col .src{
+    border: none;
+    font-size: 16px;
+    font-family: var(--poppins);
+    color:#292929;
+    margin-top: 8px;
+    padding-left: 27px;
+}
+.banner_src_col .src::placeholder{
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: 6A6A6A; 
+}
+.banner_src i{
+    width: 82px;
+    height: 82px;
+    background: var(--brand_color);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 82px;
+    color: #fff;
+}
+
+
+/* ------------------------------ banner part end --------------------------------- */
+/* ============================== Travel Benefit css start =============================== */
+#travel_benefit{
+    padding-top: 150px;
+}
+.travel_benefit_head h2{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: #1E1E1E;
+    text-align: center;
+}
+.travel_benefit_head p{
+    width: 692px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: var(--praymari_color);
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    
+}
+.travel_cards{
+    width: 422px;
+    padding: 79px 0 47px 44px;
+    margin-top: 112px;
+    transition: all linear .3s;
+}
+.travel_cards:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.travel_card_icon{
+    width: 84px;
+    height: 78px;
+    background: var(--brand_color);
+    background: rgba(0, 127, 95, .10);
+    border-radius: 10px;
+    text-align: center;
+    padding: 18px 24px;
+}
+
+.cards_text h2{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: var(--poppins);
+    color: #1E1E1E;
+    margin-top: 40px;
+}
+.cards_text p{
+    width: 300px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: var(--praymari_color);
+    margin-top: 20px;
+}
+/* ------------------------------ Travel Benefit css end --------------------------------- */
+/* ============================== Popular Destination css start =============================== */
+#popular_destination{
+    padding: 150px 0;
+}
+.destination_head h2{
+    font-size:40px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color:var(--scendory_color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.destination_head p{
+    width: 692px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: var(--praymari_color);
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom:50px ;
+}
+.popular_destination_card{
+    width: 370px;
+    padding: 21px 21px 0 21px;
+    border-radius: 14px;
+}
+.popular_destination_cards .slick-center{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 20px;
+} 
+.slick-center .destination_card_button a{
+    background: var(--brand_color);
+    color: #fff;
+}
+.destination_card_img{
+    width: 329px;
+    height: 203px;
+    border-radius: 14px;
+}
+.destination_card_reating{
+    display: flex;
+    gap:6px;
+    margin-top: 30px;
+}
+.destination_card_reating i{
+    color: #E0E0E0;
+}
+.destination_card_reating .color_same{
+    color: #FF8B00;
+}
+.destination_card_reating p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+}
+.destination_card_text h2{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: var(--poppins);
+    color: var(--scendory_color);
+    margin-top: 17px;
+}
+.destination_card_text p{
+    width: 325px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: var(--praymari_color);
+    margin-top: 20px;
+}
+.destination_card_text h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: var(--scendory_color);
+    margin-top: 20px;
+}
+.destination_card_text h3 span{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: var(--praymari_color);
+}
+.destination_card_button a{
+    width: 150px;
+    height: 48px;
+    border: 1px solid var(--brand_color);
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color:var(--brand_color);
+    margin-top: 30px;
+    margin-bottom: 42px;
+}
+/* ------------------------------ Popular Destination css end --------------------------------- */
+/* ============================== Travel part css start =============================== */
+#travel{
+    padding-top: 148px;
+    padding-bottom: 152px;
+    background: rgba(30, 30, 30, 0.05);
+}
+.travel_head h2{
+    width: 418px;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: var(--scendory_color);
+    margin-top: 62px;
+}
+.travel_head p{
+    width: 516px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: var(--praymari_color);
+    margin-top: 20px;
+}
+.travel_head  ul li{
+    display: flex;
+    gap:10px;
+    width: 372px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: var(--praymari_color);
+    margin: 10px 0;
+}
+.travel_head  ul li span{
+    color: var(--brand_color);
+}
+.travel_head_button a{
+    width: 189px;
+    height: 56px;
+    background: var(--brand_color);
+    border-radius: 17px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    transition: all linear .3s;
+}
+.travel_head_button a:hover{
+    background:transparent;
+    border: 1px solid var(--brand_color);
+    color: var(--brand_color);
+}
+.travel_counters{
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+}
+.travel_counter_box{
+    width: 270px;
+    padding: 62px 0 62px 32px;
+    background: #fff;
+    border-radius: 17px;
+    transition: all linear .3s;
+}
+.travel_counter_box:hover{
+    background: var(--brand_color);
+}
+.travel_counter_box .counter_box_icon{
+    width: 74px;
+    height: 78px;
+    background: rgba(0, 127, 95, 0.10);
+    border-radius: 14px;
+    padding: 21px 20px;
+    transition: all linear .3s;
+}
+.travel_counter_box:hover .counter_box_icon{
+    background:#fff;
+}
+.travel_counter_box h2{
+    font-size: 40px;
+    font-weight: 600;
+    font-family:var(--poppins);
+    color: var(--scendory_color);
+    margin-top: 20px;
+    transition: all linear .3s;
+}
+.travel_counter_box:hover h2{
+    color:#fff;
+}
+.travel_counter_box p{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: var(--poppins);
+    color:var(--praymari_color);
+    transition: all linear .3s;
+}
+.travel_counter_box:hover p{
+    color:#ffff;
+}
+/* ------------------------------ Travel part css end --------------------------------- */
+/* ============================== selected_destination start =============================== */
+#selected_destination{
+    padding-top: 149px;
+}
+.main_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.selected_destination_button a{
+    width: 225px;
+    height: 56px;
+    background: var(--brand_color);
+    border-radius: 17px;
+    border: 1px solid var(--brand_color);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    transition: all linear .3s;
+}
+.selected_destination_button a:hover{
+    background: transparent;
+    color:var(--brand_color)
+}
+.selected_dastination_img{
+    width: 570px;
+    position: relative;
+}
+.selected_dastaination_src_list{
+    position: absolute;
+    top: 76%;
+    left: 0;
+}
+.dastaination_src{
+    width: 350px;
+    height: 52px;
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid rgba(97, 97, 97, 0.08) ;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding-left: 16px;
+}
+.dastaination_src i{
+    color:var(--brand_color);
+}
+.dastaination_src input{
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--open_sans);
+    color: var(--scendory_color);
+}
+.dastaination_src input::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--open_sans);
+    color:var(--praymari_color);
+}
+.distaination_list ul li {
+    width: 350px;
+    height: 42px;
+    background: #fff;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--open_sans);
+    color: var(--praymari_color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 48px;
+    padding-right: 9px;
+    transition: all linear .3s;
+}
+.distaination_list ul li i{
+    color: var(--brand_color);
+}
+.distaination_list ul li:hover{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    font-weight: 600;
+}
+
+/* ------------------------------ selected_destination  end --------------------------------- */
+/* ============================== Event css start =============================== */
+#event{
+    padding-top: 70px;
+}
+.event_row{
+    display: flex;
+    align-items: center;
+}
+.event_image{
+    width: 570px;
+}
+#event .common_head h2{
+    width: 489px;
+}
+#event .common_head p{
+    width: 431px;
+}
+.event_list{
+    margin-top: 20px;
+    display: flex;
+    gap:14px;
+}
+
+.event_list ul li{
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color:var(--praymari_color);
+    margin-bottom: 15px;
+}
+/* ------------------------------ Event css end --------------------------------- */
+/* ============================== Money back part start =============================== */
+#money_back{
+    padding-top: 70px;
+    padding-bottom: 137px;
+}
+#money_back .common_head h2{
+    width: 507px;
+}
+.accordion-item {
+    border: none;
+}
+.accordion-item p{
+    width: 317px;
+}
+.accordion-button:not(.collapsed) {
+  
+    box-shadow:none;
+    margin-top: 40px;
+    background: rgba(0, 127, 95, 0.01);
+}
+.accordion {
+    --bs-accordion-btn-focus-border-color:none;
+    --bs-accordion-btn-focus-box-shadow: none;
+    width: 420px;
+    
+}
+.accordion-button::after {
+    margin-left:11px;
+}
+.accordion-item{
+    background: rgba(0, 127, 95, 0.10);
+    border-radius: 8px;
+}
+.money_back_img{
+    width: 570px;
+    position: relative;
+}
+.money_back_img_message{
+    position: absolute;
+    top: 65%;
+    left: 7%;
+    width: 222px;
+    height: 52px;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+.money_back_img_message h5{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: var(--praymari_color);
+
+}
+.money_back_message_head .money_back_img_message:nth-child(2){
+    width: 243px;
+    top: 77%;
+    left: 13%;
+}
+.money_back_message_head .money_back_img_message:nth-child(3){
+    width: 291px;
+    top: 91%;
+    left: 10%;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border:  2px solid var(--brand_color);
+    background: var(--brand_color);
+    margin-right: 11px;
+}
+.collapsed .circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border:  2px solid var(--praymari_color);
+    background: transparent;
+}
+
+/* ------------------------------ Money back part end --------------------------------- */
+/* ============================== font family start =============================== */
+.text h2{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: var(--scendory_color);
+    padding-bottom: 20px;
+}
+.text p{
+    width: 485px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: var(--praymari_color);
+   padding-bottom: 30px;
+}
+.nav-tabs .nav-link {
+    border: none;
+   
+}
+.asd{
+    display: flex;
+    gap: 30px;
+}
+.nnn{
+    padding-bottom: 50px;
+}
+.sf{
+    width: 231px;
+    margin-left: 300px;
+}
+.fg{
+    width: 298px;
+}
+.df{
+    width: 339px;
+}
+.gh{
+    width: 147px;
+}
+.bn{
+    width: 217px;
+}
+.pm{
+    border-radius: 10px;
+    border: 1px solid var(--brand_color);
+    background:#F3F3F3;
+}
+.pm:hover{
+    scale: 1.1;
+    background: var(--brand_color);
+    border:  1px solid var(--brand_color);
+}
+.asd button:hover span{
+    color: #E0E0E0;
+}
+.asd button span{
+    color: #616161;
+    font-size: 16px;
+    font-family: var(--poppins);
+    font-weight: 500;
+}
+.nnn span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 94px;
+}
+
+/* ------------------------------ font family end --------------------------------- */
+/* ============================== font family start =============================== */
+.testimonial_img img{
+    margin-top: 80px;
+}
+.testimonial_text{
+    padding-top: 325px;
+    padding-left: 86px;
+}
+.testimonial_text h2{
+    font-size: 40px;
+    color: var(--scendory_color);
+    font-family: var(--poppins);
+    font-weight: 600;
+}
+.testimonial_text img{
+    width: 85px;
+    margin-top: 41px;
+    margin-bottom: 24px;
+}
+.testimonial_text p{
+    font-size: 16px;
+    font-family: var(--praymari_color);
+    font-family: var(--poppins);
+    font-weight: 400;
+    width: 538px;
+    padding-bottom: 24px;
+}
+.testimonial_text h3{
+    font-size: 20px;
+    font-family: var(--poppins);
+    font-weight: 600;
+    color: var(--scendory_color);
+}
+
+
+/* ------------------------------ font family end --------------------------------- */
+/* ============================== font family start =============================== */
+
+/* ------------------------------ font family end --------------------------------- */
